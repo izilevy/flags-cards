@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Countries Exam - Izidor Levy 4578/18</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="container">
+    <!--Navbar with the title and search options-->
+    <nav class="navbar navbar-light">
+        <h2>Countries Lookup (Cards)</h2>
+        <span class="form-inline">
+            <input type="text" class="form-control mx-2" id="countrySearch" aria-describedby="Country Search"
+                placeholder="Country search">
+            <button type="button" class="btn btn-primary mx-2" onclick="searchCntry()">Search</button>
+            <button type="button" class="btn btn-warning mx-2" onclick="searchCntry()">Show all</button>
+        </span>
+    </nav>
+
+    <!--Insertation of data DIV from JS-->
+    <div id="htmlData" class="row m-2"></div>
+
+    <!--Load the JS file of the search and load-->
+    <script src="search.js"></script>
+
+    <style>
+        .flag {
+            height: 5rem;
+            box-shadow: 2px 2px gray;
+        }
+    </style>
+
+</body>
+
+</html>
